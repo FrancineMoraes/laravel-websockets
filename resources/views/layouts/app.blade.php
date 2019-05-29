@@ -31,8 +31,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    <a  style="margin-top: -10px;" class="navbar-brand" href="{{ url('/') }}">
+                        <h4>Movies and coffe</h4>
                     </a>
                 </div>
 
@@ -56,7 +56,7 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
-                                      <a href="{{ route('posts.index') }}">Manage Posts</a>
+                                      <a href="{{ route('movies.index') }}">Manage Movies</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
@@ -78,18 +78,6 @@
         </nav>
 
         @yield('content')
-
-        <div class="container">
-          <div class="col-md-12">
-            <hr />
-          </div>
-
-          <div class="col-md-12" style="margin-bottom: 20px;">
-            <div class="text-center">
-              Tutorial Taught & Built with ❤️ by <a href="https://devmarketer.io">DevMarketer</a>
-            </div>
-          </div>
-        </div>
     </div>
 
     <!-- Scripts -->
