@@ -82,7 +82,7 @@
           })
         },
         listen() {
-          Echo.private('post.'+this.post.id)
+          Echo.channel('post.'+this.post.id)
               .listen('NewComment', (comment) => {
                 this.comments.unshift(comment);
               })
